@@ -95,3 +95,33 @@ echo '$res = $num > 0 ? true : false <br>';
 $res = $num>0 ? true : false;
 echo $res;
 
+
+
+//
+echo "<br><br>Калькулятор:<br>";
+$a = 5;
+$b = 10;
+
+$operator = "*";
+
+switch($operator)
+{
+    case "+":
+        echo $a." + ".$b." = ".$a+$b;
+        break;
+        case "-":
+            echo $a." - ".$b." = ".$a-$b;
+            break;
+
+        case "*":
+            echo $a." * ".$b." = ".$a*$b;
+            break;
+        case "/":
+            echo $a." / ".$b." = ";
+            if($a != 0 || $b !=0 )
+            {
+                echo $a/$b;
+            }
+            break;
+
+}
